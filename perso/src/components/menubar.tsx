@@ -51,9 +51,13 @@ const AppMenubar :React.FC = () =>{
         }
     ];
   return(
-   <>
-    <Menubar model={items} />   
-   </>
+    <div className="layout-topbar">
+    <div className="p-d-flex p-jc-between p-ai-left">
+        <div className="p-mr-2">
+        <Menubar model={items} />
+        </div>
+    </div>
+</div>
 
   )
 

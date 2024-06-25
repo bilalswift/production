@@ -18,8 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      
       <body className={inter.className}>
-        <AppMenubar></AppMenubar>
+         <AppMenubar />
         <AppSidebar></AppSidebar>
         {children}</body>
     </html>
