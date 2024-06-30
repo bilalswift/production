@@ -1,0 +1,69 @@
+.sidebar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(186, 89, 227); /* Red color for button area */
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%; /* Makes the button a circle */
+    margin: 1rem; /* Adds some margin for better positioning */
+}
+
+.collapsed {
+    width:6rem ;
+}
+  .w-16 {
+    width: 4rem ;
+  }
+  .w-64 {
+    width: 16rem ;
+  }
+  .light-blue-bg {
+    background-color: #ffffff; /* Light blue color */
+    color: #333; /* Adjust text color for better contrast */
+  }
+  .sidebar-item {
+    padding: 0rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #4a5af0; /* Different color on hover */
+  }
+  
+  /* Media queries for responsive design */
+  @media (min-width: 1280px) {
+    .expanded {
+        width: 18rem ; /* Larger width for large screens */
+    }
+  }
+  
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .expanded {
+        width: 16rem ; /* Medium width for desktops */
+    }
+  }
+  
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .expanded {
+        width: 14rem ; /* Smaller width for tablets */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .expanded {
+        width: 12rem ; /* Narrower width for small devices */
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .expanded {
+        width: 10rem ; /* Smallest width for very small devices */
+    }
+  }
+  
+  

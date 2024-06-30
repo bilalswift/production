@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Button } from 'primereact/button';
 import { TieredMenu } from 'primereact/tieredmenu';
 import 'primeicons/primeicons.css';
+import './Sidebar_style.css'
 //import 'primeflex/primeflex.css'; // Ensure primeflex is included for responsive utilities
 
 const AppSidebar: React.FC = () => {
@@ -48,7 +49,7 @@ const AppSidebar: React.FC = () => {
         <>
            
             <Sidebar visible={visible} onHide={() => setVisible(true)} className={`light-blue-bg ${collapsed ? 'collapsed' : 'expanded'}`}>
-                <div className={`min-h-screen flex relative lg:static surface-ground ${collapsed ? 'collapsed' : 'expanded'}`}>
+               
                     <div id="app-sidebar-2" className={`surface-section h-screen flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none transition-all transition-duration-300 ${collapsed ? 'collapsed' : 'expanded'} light-blue-bg`}>
                         <div className="overflow-y-auto">
                             
@@ -133,7 +134,7 @@ const AppSidebar: React.FC = () => {
                             </button>
                         </div>
                     </div>
-                </div>
+                
             </Sidebar>
         </>
     );

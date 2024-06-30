@@ -1,10 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import AppSidebar from '../components/sidebar'
-import AppMenubar from '@/components/menubar'
+
+import AppSidebar from '../components/sidebar/sidebar'
+
+import AppNavbar from '@/components/navbar/navbar'
 
  
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -18,11 +18,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
+    <body  className = "grid-container" >
+       
+
+          <div className ="header">
+             <AppNavbar/>
+          </div>
+          <div className="contenu">
+
+          </div>
+     
+           
+       
+     </body>
       
-      <body className={inter.className}>
-         <AppMenubar />
-        <AppSidebar></AppSidebar>
-        {children}</body>
+      
     </html>
   )
 }
