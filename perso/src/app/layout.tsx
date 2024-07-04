@@ -1,8 +1,9 @@
 import './globals.css'
-
+import "primeflex/primeflex.css";
 import AppSidebar from '../components/sidebar/sidebar'
-
+import 'primereact/resources/themes/lara-dark-blue/theme.css';
 import AppNavbar from '@/components/navbar/navbar'
+import Footer from '@/components/footer/footer';
 
  
 
@@ -18,22 +19,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <body   >
+        <div  className='grid'>
+            <div className=" col-12 " >
+                <AppNavbar/>
+            </div>
+            <div className='grid flex  col-12 min-h-screen'>
+                  
+              <div className="col-2  ">
+                  <AppSidebar></AppSidebar>
+              </div>  
+              <div className="col-10   bg-primary  ">
+                {children}
+              </div>
+             {/* <div className='col-12 m-10 font-color-black bg-blue '>
+                <Footer></Footer>
+              </div>*/ }
 
-    <body  className = "grid-container" >
        
-
-          <div className ="header">
-             <AppNavbar/>
-          </div>
-          <div className="contenu">
-
-          </div>
-     
+            </div>
            
-       
-     </body>
-      
-      
+            
+         
+        </div>
+      </body>
     </html>
   )
 }
