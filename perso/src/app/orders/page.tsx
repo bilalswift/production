@@ -40,7 +40,16 @@ export default function Orders() {
                   <Column field="Quantity" header="Quantity"></Column>
                   <Column field="JobCreteria" header="Job Creteria"></Column>
                   <Column field="Tasks" header="Tasks"></Column>
-                  <Column field="Actions" header="Actions"></Column>
+                  <Column field="Actions" header="Actions" body={
+                    
+                    <div className="flex justify-content-between">
+                      <i className="pi pi-trash bg-white font-bold text-black-alpha-80 p-1 m-1"> </i> 
+                      <i className="pi pi-print bg-yellow-400 font-bold text-black-alpha-80 p-1 m-1"> </i> 
+                      <i className="pi pi-trash bg-red-400 font-bold text-black-alpha-80 p-1 m-1"> </i>
+                      <i className="pi pi-flag  bg-green-400 font-bold text-black-alpha-80 p-1 m-1"> </i>
+                    </div> }>  
+                  
+                  </Column>
 
             </DataTable>
         

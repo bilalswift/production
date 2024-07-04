@@ -5,15 +5,15 @@ import { Button } from 'primereact/button';
 
 export default function Shipping() {
   const elements = [
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' },
-    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Repot:'F' }
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' },
+    { Name : "CIMBE0001" ,Box: 'controle', ProductionStep: '50', ProductionState: 'S', Quantity: 'F' ,Report:'' }
   
   ]; 
     return (
@@ -35,7 +35,12 @@ export default function Shipping() {
                       <Column field="ProductionStep" header="Job Size"></Column>
                       <Column field="ProductionState" header="Max Order Size"></Column>
                       <Column field="Quantity" header="Min Order Size"></Column>
-                      <Column field="Repot" header="Qc Rate"></Column>
+                      
+                      <Column field="Report" header="Report" body={
+                        <i className="pi pi-pencil bg-green-200 font-bold text-black-alpha-80 p-1"> </i>
+                        }>
+
+                       </Column>
                       
                 </DataTable>
             

@@ -65,7 +65,16 @@ export default function Datasets() {
                 <Column field="ProductionStep" header="Production step"></Column>
                 <Column field="ProductionResult" header="Production Results   "></Column>
                 <Column field="MachineTask" header="Machine Task "></Column>
-                <Column field="Action" header="Action ">  </Column>
+                <Column field="Action" header="Action "body={
+                     <div className="flex justify-content-between">
+                      <i className="pi pi-trash bg-red-200 font-bold text-black-alpha-80 p-1 m-1"> </i> 
+                      <i className="pi pi-refresh bg-green-200 font-bold text-black-alpha-80 p-1 m-1"> </i>
+                      <i className="pi pi-pencil bg-blue-400 font-bold text-black-alpha-80 p-1 m-1"> </i>
+                     </div>
+                        }>  
+                </Column>
+
+                
 
           </DataTable>
 

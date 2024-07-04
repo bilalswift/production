@@ -43,8 +43,13 @@ export default function Controle() {
                   
                   <Column field="ProductionStep" header="Production Step"></Column>
                   <Column field="Quantity" header="Quantity">   </Column>
-                  <Column field="Start" header="Start"> </Column>
-                  <Column field="Finish" header="Finish"> </Column>
+                  <Column field="Start" header="Start"   body={ 
+                      <i className="pi pi-heart-fill bg-red-400 font-bold text-black-alpha-80 p-1 m-1"> </i> }>
+                  </Column>
+                 
+                  <Column field="Finish" header="Finish" body={ 
+                      <i className="pi  pi-flag-fill bg-green-400 font-bold text-black-alpha-80 p-1 m-1"> </i> }>
+                  </Column>
 
                 </DataTable>
         
